@@ -8,10 +8,12 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello Vue 2 + Vite" />
-  </div>
+  <v-app id="app">
+    <v-container>
+      <img alt="Vue logo" src="./assets/logo.png" />
+      <HelloWorld msg="Hello Vue 2 + Vite" />
+    </v-container>
+  </v-app>
 </template>
 
 <style>
