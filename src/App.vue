@@ -1,8 +1,8 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyComponent from './components/MyComponent.vue'
 export default {
   components: {
-    HelloWorld,
+    MyComponent,
   }
 }
 </script>
@@ -10,8 +10,9 @@ export default {
 <template>
   <v-app id="app">
     <v-container>
-      <img alt="Vue logo" src="./assets/logo.png" />
-      <HelloWorld msg="Hello Vue 2 + Vite" />
+      <v-btn @click="$store.commit('user/TOGGLE_LOADING')">Toggle loading</v-btn>
+      <pre>loading: {{ $store.state.user.loading }}</pre>
+      <MyComponent />
     </v-container>
   </v-app>
 </template>

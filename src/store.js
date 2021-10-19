@@ -8,11 +8,11 @@ export default new Vuex.Store({
     user: {
       namespaced: true,
       state: () => ({
-        loading: false,
+        loading: true,
       }),
       mutations: {
-        SET_LOADING(state, payload) {
-          state.loading = payload
+        TOGGLE_LOADING(state) {
+          state.loading = !state.loading
         },
       },
     },
